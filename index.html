@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TWICE Fandom</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="twice logo pink.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo twice.png" alt="TWICE Logo">
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    
+    <!-- ======== TOAST NOTIFICATION ======== -->
+    <div id="toast"></div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#discography">Discography</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  <!-- Search -->
+  <div class="search-container">
+    <span id="searchToggle" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></span>
+    <input type="text" id="searchBar" placeholder="Cari album/member" />
+    <span class="clear-btn"><i class="fa-solid fa-xmark"></i></span>
+  </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to TWICE Fandom</h1>
+      <h2>GA TWICE GA LAKI!!!</h2>
+      <p>Tujuan utama Anda untuk segala hal yang berhubungan dengan grup K-pop sensasional TWICE!</p>
+      <a href="#members" class="btn">Discover Members</a>
+    </div>
+  </section>
+
+  <!-- Members Modal -->
+  <section id="members" class="section">
+    <h2 class="section-title">Meet the Members</h2>
+    <div class="members-grid">
+      <div class="member-card" onclick="openModal('nayeon')">
+        <img src="Nayeon.jpg" alt="Nayeon">
+        <h3>Nayeon</h3>
+        <p>Lead Vocalist, Center</p>
+      </div>
+      <div class="member-card" onclick="openModal('jeongyeon')">
+        <img src="Jeongyeon.jpg" alt="Jeongyeon">
+        <h3>Jeongyeon</h3>
+        <p>Lead Vocalist</p>
+      </div>
+      <div class="member-card" onclick="openModal('momo')">
+        <img src="Momo.jpg" alt="Momo">
+        <h3>Momo</h3>
+        <p>Main Dancer, Sub Vocalist, Sub Rapper</p>
+      </div>
+      <div class="member-card" onclick="openModal('sana')">
+        <img src="Sana.jpg" alt="Sana">
+        <h3>Sana</h3>
+        <p>Sub Vocalist</p>
+      </div>
+      <div class="member-card" onclick="openModal('jihyo')">
+        <img src="Jihyo.jpg" alt="Jihyo">
+        <h3>Jihyo</h3>
+        <p>Leader, Main Vocalist</p>
+      </div>
+      <div class="member-card" onclick="openModal('mina')">
+        <img src="Mina.jpg" alt="Mina">
+        <h3>Mina</h3>
+        <p>Main Dancer, Sub Vocalist</p>
+      </div>
+      <div class="member-card" onclick="openModal('dahyun')">
+        <img src="Dahyun.jpg" alt="Dahyun">
+        <h3>Dahyun</h3>
+        <p>Lead Rapper, Sub Vocalist</p>
+      </div>
+      <div class="member-card" onclick="openModal('chaeyoung')">
+        <img src="Chaeyoung.jpg" alt="Chaeyoung">
+        <h3>Chaeyoung</h3>
+        <p>Main Rapper, Sub Vocalist</p>
+      </div>
+      <div class="member-card" onclick="openModal('tzuyu')">
+        <img src="Tzuyu.jpg" alt="Tzuyu">
+        <h3>Tzuyu</h3>
+        <p>Lead Dancer, Sub Vocalist, Visual, Maknae</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album-controls">
+    <select id="filterYear">
+      <option value="all">Semua Tahun</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select>
+  
+    <select id="sortOrder">
+      <option value="desc">Terbaru ke Terlama</option>
+      <option value="asc">Terlama ke Terbaru</option>
+    </select>
+  </div>
+  
+  <!-- Albums Modal-->
+  <section id="discography" class="section dark-section">
+    <h2 class="section-title">Discography</h2>
+    <div class="albums-grid">
+      <div class="album-card" onclick="openAlbum(2015)">
+        <img src="the story begins.jpg" alt="The Story Begins">
+        <p>The Story Begins (2015)</p>
+      </div>
+      <div class="album-card" onclick="openAlbum(2016)">
+        <img src="page two.jfif" alt="Page Two">
+        <p>Page Two (2016)</p>
+      </div>
+      <div class="album-card" onclick="openAlbum(2017)">
+        <img src="twicetagram.jfif" alt="Twicetagram">
+        <p>Twicetagram (2017)</p>
+      </div>
+      <div class="album-card" onclick="openAlbum(2018)">
+        <img src="what is love.jfif" alt="What is Love?">
+        <p>What is Love? (2018)</p>
+      </div>
+      <div class="album-card" onclick="openAlbum(2019)">
+        <img src="feel special album.jpg" alt="Feel Special">
+        <p>Feel Special (2019)</p>
+      </div>
+      <div class="album-card" onclick="openAlbum(2020)">
+        <img src="Eyes Wide Open.png" alt="Eyes Wide Open">
+        <p>Eyes Wide Open (2020)</p>
+      </div>
+      <div class="album-card" onclick="openAlbum(2021)">
+        <img src="formula of love.jpg" alt="Formula of Love">
+        <p>Formula of Love (2021)</p>
+      </div>
+      <div class="album-card" onclick="openAlbum(2022)">
+        <img src="Between 1&2.png" alt="Between 1&2">
+        <p>Between 1&2 (2022)</p>
+      </div>
+      <div class="album-card" onclick="openAlbum(2023)">
+        <img src="ready to be.jfif" alt="Ready to Be">
+        <p>Ready to Be (2023)</p>
+      </div>
+      <div class="album-card" onclick="openAlbum(2024)">
+        <img src="WithYOU-th.png" alt="With YOU-th">
+        <p>With YOU-th (2024)</p>
+      </div>
+      <div class="album-card" onclick="openAlbum(2025)">
+        <img src="This Is For.jpg" alt="This Is For">
+        <p>This Is For (2025)</p>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid">
+      <img src="feel special 2.jpg" alt="">
+      <img src="i got you.jpg" alt="">
+      <img src="with you -th.jpg" alt="">
+      <img src="alcohol free.jpg" alt="">
+      <img src="the feels.jpg" alt="">
+      <img src="fancy you.jpg" alt="">
+      <img src="twice strategy.jpg" alt="">
+      <img src="twice this is for.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rakadell33@gmail.com" target="_blank">
+      rakadell33@gmail.com
+    </a>
+    </p>
+    <p>Follow us on social media:</p>
+    <ul>
+      <a target="_blank" href="https://x.com/Ryujayzz">Twitter</a>
+      <a target="_blank" href="https://www.instagram.com/ryujayzz/">Instagram</a>
+    </ul>
+    <p>&copy; 2025 TWICE Fandom BY Ryujayz. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal Member -->
+<div id="memberModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImg" src="" alt="">
+    <h2 id="modalName"></h2>
+    
+    <!-- Bio dibuat list biar rapi ke bawah -->
+    <ul id="modalBio" class="modal-bio"></ul>
+  </div>
+</div>
+
+  <!-- Modal Album -->
+  <div id="albumModal" class="modal">
+    <div class="modal-content">
+      <span class="album-close">&times;</span>
+      <img id="albumImg" src="" alt="Album Cover">
+      <h3 id="albumTitle"></h3>
+      <p id="albumDesc"></p>
+      <h4>Tracklist:</h4>
+      <ul id="albumTracks"></ul>
+    </div>
+  </div>
+
+ <!-- Modal Gallery -->
+<div id="galleryModal" class="modal">
+  <div class="gallery-wrapper">
+    <span class="gallery-close">&times;</span>
+    <img id="galleryModalImg" src="" alt="Gallery Image">
+  </div>
+</div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

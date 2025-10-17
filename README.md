@@ -51,7 +51,7 @@ Font Awesome (ikon)
 Responsive Layout dengan Flexbox & Media Query
 
 
-👩‍💻 Pengembang
+Pengembang
 
 Nama: Galih Raka/Ryujayz
 Mata Kuliah: Pengenalan Pemrograman

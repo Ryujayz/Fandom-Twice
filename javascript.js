@@ -331,7 +331,7 @@ galleryClose.onclick = () => galleryModal.style.display = "none";
 galleryModal.addEventListener("click", e => { if (e.target === galleryModal) galleryModal.style.display = "none"; });
 
 // ========== NOTIF AUDIO ==========
-const searchSound = new Audio("sounds/Ping.mp3");
+const searchSound = new Audio("Ping.mp3");
 
 document.getElementById("searchToggle").addEventListener("click", () => {
   searchSound.currentTime = 0;

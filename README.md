@@ -1,7 +1,7 @@
 
 ❤ TWICE Fandom Website
 
-Website ini dibuat sebagai tugas proyek mata kuliah Interaksi Manusia dan Komputer (IMK).
+Website ini dibuat sebagai tugas proyek mata kuliah Pengenalan Pemrograman.
 Tujuan utamanya adalah menerapkan prinsip desain antarmuka dan pengalaman pengguna (UI/UX) dalam sebuah website fandom bertema TWICE.
 
 
